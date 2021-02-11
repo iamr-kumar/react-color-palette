@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import Slider from "rc-slider";
 import Select from "@material-ui/core/Select";
+import { Link } from "react-router-dom";
 import "rc-slider/assets/index.css";
 import "./Navbar.css";
 import { MenuItem } from "@material-ui/core";
@@ -22,7 +23,7 @@ const Navbar = ({ level, changeLevel, handleChange }) => {
     <Fragment>
       <header className="Navbar">
         <div className="logo">
-          <a href="#">ColorPalette</a>
+          <Link to="/">ColorPalette</Link>
         </div>
         <div className="slider-container">
           <span>Level: {level}</span>
